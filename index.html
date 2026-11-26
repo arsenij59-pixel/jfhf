@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#100e0c">
+<title>ШАУРМА №1 — самая сочная шаурма в городе</title>
+<meta name="description" content="Шаурма на открытом огне из свежего мяса. Доставка за 40 минут. Меню, цены, заказ онлайн.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= ШАПКА ================= -->
+<header class="header" id="header">
+  <div class="container">
+    <div class="nav">
+      <a href="#top" class="logo">
+        <span class="logo-mark">🌯</span>
+        ШАУРМА<span class="logo-accent">№1</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#menu">Меню</a>
+        <a href="#about">О нас</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="tel:+79991234567" class="phone">+7 (999) 123-45-67</a>
+        <button class="cart-btn" id="cartBtn">
+          🛒 <span>Корзина</span>
+          <span class="badge" id="cartBadge">0</span>
+        </button>
+        <button class="burger" id="burger" aria-label="Меню">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#menu">Меню</a>
+      <a href="#about">О нас</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#contacts">Контакты</a>
+      <a href="tel:+79991234567">📞 +7 (999) 123-45-67</a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= ХИРО ================= -->
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-tag">🔥 Готовим на открытом огне</div>
+      <h1>Самая <span class="grad-text">сочная шаурма</span> в городе</h1>
+      <p>Свежее мясо, хрустящие овощи и фирменный соус. Собираем при вас и доставляем горячей за 40 минут — или вернём деньги.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">Смотреть меню →</a>
+        <a href="#contacts" class="btn btn-ghost">Как добраться</a>
+      </div>
+      <div class="stats">
+        <div>
+          <div class="stat-num">4.9</div>
+          <div class="stat-label">рейтинг на картах</div>
+        </div>
+        <div>
+          <div class="stat-num">12 лет</div>
+          <div class="stat-label">на рынке</div>
+        </div>
+        <div>
+          <div class="stat-num">50 000+</div>
+          <div class="stat-label">довольных гостей</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-ring"></div>
+      <div class="hero-plate">🌯</div>
+      <div class="chip chip-1">🚀 Доставка 40 мин</div>
+      <div class="chip chip-2">🔥 На огне</div>
+      <div class="chip chip-3">🥗 Всё свежее</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= МЕНЮ ================= -->
+<section id="menu">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-label">Меню</div>
+      <h2 class="sec-title">Выбирай своё</h2>
+      <p class="sec-sub">Всё готовим после заказа. Хотите острее, сырнее или без лука — просто напишите в комментарии.</p>
+    </div>
+
+    <div class="filters reveal" id="filters">
+      <button class="filter active" data-cat="all">Всё</button>
+      <button class="filter" data-cat="shawarma">Шаурма</button>
+      <button class="filter" data-cat="snacks">Закуски</button>
+      <button class="filter" data-cat="drinks">Напитки</button>
+      <button class="filter" data-cat="sauces">Соусы</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid"></div>
+  </div>
+</section>
+
+<!-- ================= О НАС ================= -->
+<section id="about">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-label">Почему мы</div>
+      <h2 class="sec-title">Не просто шаурма</h2>
+      <p class="sec-sub">Мы не экономим на продуктах и не разогреваем вчерашнее. Каждый заказ — с нуля.</p>
+    </div>
+    <div class="features">
+      <div class="feature reveal">
+        <div class="feature-ico">🔥</div>
+        <h3>Открытый огонь</h3>
+        <p>Мясо маринуется 12 часов и жарится на вертеле — получается сочным внутри и румяным снаружи.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature-ico">🥬</div>
+        <h3>Свежие продукты</h3>
+        <p>Овощи привозят каждое утро. Лаваш печём сами, соусы готовим по авторским рецептам.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature-ico">⚡</div>
+        <h3>Быстро</h3>
+        <p>Средняя сборка заказа — 7 минут. Курьер приезжает за 40 минут по городу.</p>
+      </div>
+      <div class="feature reveal">
+        <div class="feature-ico">💚</div>
+        <h3>Без сюрпризов</h3>
+        <p>Фиксированные цены, честный вес и состав. Не понравилось — вернём деньги.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ОТЗЫВЫ ================= -->
+<section id="reviews">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-label">Отзывы</div>
+      <h2 class="sec-title">Что говорят гости</h2>
+    </div>
+    <div class="reviews">
+      <div class="review reveal">
+        <div class="stars">★★★★★</div>
+        <p>Беру здесь уже третий год. Порции огромные, мясо реально сочное, а не сухая стружка. Чесночный соус — отдельная любовь.</p>
+        <div class="reviewer">
+          <div class="avatar">А</div>
+          <div>
+            <div class="reviewer-name">Артём К.</div>
+            <div class="reviewer-sub">постоянный гость</div>
+          </div>
+        </div>
+      </div>
+      <div class="review reveal">
+        <div class="stars">★★★★★</div>
+        <p>Заказали на весь офис — привезли через 35 минут, всё горячее и аккуратно упаковано. Коллеги до сих пор вспоминают.</p>
+        <div class="reviewer">
+          <div class="avatar">М</div>
+          <div>
+            <div class="reviewer-name">Марина Л.</div>
+            <div class="reviewer-sub">корпоративный заказ</div>
+          </div>
+        </div>
+      </div>
+      <div class="review reveal">
+        <div class="stars">★★★★★</div>
+        <p>Острая XXL — это вызов. Справился, но еле дошёл. Лучшее соотношение цены и количества мяса в городе.</p>
+        <div class="reviewer">
+          <div class="avatar">Д</div>
+          <div>
+            <div class="reviewer-name">Дмитрий С.</div>
+            <div class="reviewer-sub">любитель острого</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= КОНТАКТЫ ================= -->
+<section id="contacts">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-label">Контакты</div>
+      <h2 class="sec-title">Заходите в гости</h2>
+    </div>
+    <div class="contacts-grid">
+      <div class="contact-card reveal">
+        <div class="contact-row">
+          <div class="contact-ico">📍</div>
+          <div>
+            <h4>Адрес</h4>
+            <span>ул. Ленина, 42, 1 этаж</span>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-ico">📞</div>
+          <div>
+            <h4>Телефон</h4>
+            <a href="tel:+79991234567">+7 (999) 123-45-67</a>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-ico">🕒</div>
+          <div>
+            <h4>Часы работы</h4>
+            <span>Ежедневно с 10:00 до 23:00</span>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-ico">🚀</div>
+          <div>
+            <h4>Доставка</h4>
+            <span>Бесплатно от 800 ₽ · 40 минут</span>
+          </div>
+        </div>
+        <a href="tel:+79991234567" class="btn btn-primary" style="margin-top:auto">Заказать по телефону</a>
+      </div>
+
+      <div class="map-card reveal">
+        <div class="map-pin">
+          <div class="dot">🌯</div>
+          <strong>Шаурма №1</strong>
+          <small>ул. Ленина, 42 · открыто до 23:00</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ФУТЕР ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <a href="#top" class="logo">
+        <span class="logo-mark">🌯</span>
+        ШАУРМА<span class="logo-accent">№1</span>
+      </a>
+      <div class="footer-links">
+        <a href="#menu">Меню</a>
+        <a href="#about">О нас</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+      <a href="tel:+79991234567" class="btn btn-ghost" style="padding:11px 22px;font-size:14px">+7 (999) 123-45-67</a>
+    </div>
+    <div class="copyright">© 2026 Шаурма №1. Сделано с любовью к мясу и лавашу.</div>
+  </div>
+</footer>
+
+<!-- ================= КОРЗИНА ================= -->
+<div class="overlay" id="overlay"></div>
+
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-head">
+    <h3 id="drawerTitle">Корзина</h3>
+    <button class="close-btn" id="closeCart" aria-label="Закрыть">✕</button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot" id="drawerFoot"></div>
+</aside>
+
+<div class="toast" id="toast"></div>
+
+<!-- ================= СКРИПТЫ ================= -->
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
